@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fa;
+    color: #222;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #222;
+}
+
+nav ul a:hover {
+    opacity: 0.6;
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+.hero {
+    max-width: none;
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    background: #e9eef5;
+}
+
+.hero > div {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+.hero h1 {
+    max-width: 700px;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.small-title {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.button,
+button {
+    display: inline-block;
+    border: none;
+    padding: 14px 25px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card,
+.project {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 25px;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.technology-list span {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    max-width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+#formMessage {
+    margin-top: 10px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
