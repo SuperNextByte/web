@@ -1,311 +1,171 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>NextByte | Soluciones informáticas</title>
-
+    <meta name="description" content="NextByte: muntatge d'ordinadors, manteniment, reparació i solucions informàtiques.">
+    <title>NextByte | Solucions informàtiques</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <header>
-        <nav>
-            <a href="#inicio" class="logo">NextByte</a>
-
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#quienes-somos">Quiénes somos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#tecnologias">Tecnologías</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="capcalera">
+        <div class="barra-navegacio">
+            <a class="marca" href="#inici" aria-label="NextByte, inici">
+                <img src="img/logo-horitzontal.jpg" alt="Logotip de NextByte">
+            </a>
+            <button class="boto-menu" id="botoMenu" aria-expanded="false" aria-controls="menuPrincipal">☰ Menú</button>
+            <nav aria-label="Menú principal">
+                <ul id="menuPrincipal">
+                    <li><a href="#inici">Inici</a></li>
+                    <li><a href="#qui-som">Qui som</a></li>
+                    <li><a href="#serveis">Serveis</a></li>
+                    <li><a href="#projectes">Projectes</a></li>
+                    <li><a href="#equip">Equip</a></li>
+                    <li><a href="#tecnologies">Tecnologies</a></li>
+                    <li><a href="#contacte">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-
     <main>
-
-        <!-- INICIO -->
-        <section id="inicio" class="hero">
-
-            <div>
-                <p class="small-title">NEXTBYTE</p>
-
-                <h1>
-                    Soluciones informáticas
-                    para tu equipo
-                </h1>
-
-                <p>
-                    Especialistas en montaje, reparación,
-                    mantenimiento y actualización de equipos
-                    informáticos.
-                </p>
-
-                <a href="#servicios" class="button">
-                    Conoce nuestros servicios
-                </a>
+        <section class="hero" id="inici">
+            <div class="hero-contingut">
+                <p class="etiqueta">SOLUCIONS INFORMÀTIQUES</p>
+                <h1>La tecnologia, <span>al teu abast.</span></h1>
+                <p class="hero-text">Muntatge d'ordinadors, manteniment i reparació d'equips amb un tracte proper i solucions pensades per a tu.</p>
+                <div class="hero-accions">
+                    <a class="boto boto-principal" href="#serveis">Descobreix els serveis</a>
+                    <a class="boto boto-secundari" href="#contacte">Contacta amb nosaltres</a>
+                </div>
             </div>
-
+            <img class="hero-imatge" src="img/hero-tecnologia.jpg" alt="Il·lustració tecnològica d'un ordinador i components">
         </section>
 
-
-        <!-- QUIÉNES SOMOS -->
-        <section id="quienes-somos">
-
-            <h2>Quiénes somos</h2>
-
-            <p>
-                NextByte es una empresa especializada en
-                hardware, montaje, mantenimiento y reparación
-                de equipos informáticos.
-            </p>
-
-            <p>
-                Nuestro objetivo es ofrecer soluciones adaptadas
-                a las necesidades, características y presupuesto
-                de cada cliente.
-            </p>
-
+        <section class="seccio" id="qui-som">
+            <div class="titol-seccio">
+                <p class="etiqueta">CONEIX-NOS</p>
+                <h2>Qui <span>som?</span></h2>
+            </div>
+            <div class="qui-som-grid">
+                <div class="qui-som-text">
+                    <p>NextByte és una empresa dedicada al sector de la informàtica i la tecnologia. El nostre objectiu és oferir solucions pràctiques, eficients i fiables tant a particulars com a empreses.</p>
+                    <p>Ens especialitzem en el muntatge d'ordinadors, el manteniment d'equips, la reparació d'avaries i l'assessorament informàtic. Escoltem les necessitats de cada client per trobar la solució més adequada.</p>
+                    <div class="dades-rapides">
+                        <div><strong>4</strong><span>Àrees de treball</span></div>
+                        <div><strong>1</strong><span>Equip compromès</span></div>
+                        <div><strong>100%</strong><span>Atenció personalitzada</span></div>
+                    </div>
+                </div>
+                <img class="imatge-qui-som" src="img/hero-tecnologia.jpg" alt="Entorn tecnològic de NextByte" loading="lazy">
+            </div>
         </section>
 
-
-        <!-- SERVICIOS -->
-        <section id="servicios">
-
-            <h2>Servicios</h2>
-
-            <div class="cards">
-
-                <article class="card">
-                    <h3>Montaje de equipos</h3>
-                    <p>
-                        Montaje y configuración de ordenadores
-                        y otros equipos informáticos.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Reparación de hardware</h3>
-                    <p>
-                        Diagnóstico y reparación de problemas
-                        relacionados con los componentes físicos.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Mantenimiento y actualización</h3>
-                    <p>
-                        Limpieza, mantenimiento preventivo y
-                        actualización de componentes.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Gestión empresarial</h3>
-                    <p>
-                        Gestión de clientes, proveedores,
-                        pedidos, presupuestos y facturas.
-                    </p>
-                </article>
-
+        <section class="seccio fons-alternatiu" id="serveis">
+            <div class="titol-seccio centrat">
+                <p class="etiqueta">QUÈ FEM</p>
+                <h2>Els nostres <span>serveis</span></h2>
+                <p>Solucions informàtiques per cuidar, reparar i millorar els teus equips.</p>
             </div>
-
+            <div class="graella targetes-serveis">
+                <article class="targeta">
+                    <img src="img/servei-muntatge.jpg" alt="Il·lustració de muntatge d'ordinadors" loading="lazy">
+                    <div class="targeta-cos"><span class="numero">01</span><h3>Muntatge d'ordinadors</h3><p>Muntem ordinadors a mida segons les necessitats, el pressupost i l'ús que se'n farà.</p></div>
+                </article>
+                <article class="targeta">
+                    <img src="img/servei-manteniment.jpg" alt="Il·lustració de manteniment informàtic" loading="lazy">
+                    <div class="targeta-cos"><span class="numero">02</span><h3>Manteniment informàtic</h3><p>Fem revisions i tasques preventives per ajudar a mantenir els equips en bon estat.</p></div>
+                </article>
+                <article class="targeta">
+                    <img src="img/servei-reparacio.jpg" alt="Il·lustració de reparació d'equips" loading="lazy">
+                    <div class="targeta-cos"><span class="numero">03</span><h3>Reparació d'equips</h3><p>Identifiquem problemes de maquinari i programari i proposem solucions adequades.</p></div>
+                </article>
+                <article class="targeta">
+                    <img src="img/projecte-web.jpg" alt="Il·lustració de solucions digitals" loading="lazy">
+                    <div class="targeta-cos"><span class="numero">04</span><h3>Assessorament informàtic</h3><p>T'ajudem a escollir components, equips i solucions tecnològiques.</p></div>
+                </article>
+            </div>
         </section>
 
-
-        <!-- PROYECTOS -->
-        <section id="proyectos">
-
-            <h2>Proyectos</h2>
-
-            <div class="project">
-
-                <h3>Proyecto 1</h3>
-
-                <p>
-                    Proyecto ficticio de montaje y configuración
-                    de un equipo informático personalizado.
-                </p>
-
-                <p>
-                    <strong>Tecnologías:</strong>
-                    Hardware, Windows, configuración de sistemas.
-                </p>
-
+        <section class="seccio" id="projectes">
+            <div class="titol-seccio">
+                <p class="etiqueta">FEINA I SOLUCIONS</p>
+                <h2>Projectes <span>destacats</span></h2>
+                <p>Exemples de projectes que representen les nostres àrees de treball.</p>
             </div>
-
-            <div class="project">
-
-                <h3>Proyecto 2</h3>
-
-                <p>
-                    Proyecto ficticio de mantenimiento y
-                    actualización de equipos informáticos.
-                </p>
-
-                <p>
-                    <strong>Tecnologías:</strong>
-                    SSD, RAM, mantenimiento de hardware.
-                </p>
-
+            <div class="projecte-destacat">
+                <img src="img/projecte-web.jpg" alt="Il·lustració d'un projecte tecnològic" loading="lazy">
+                <div><p class="etiqueta">PROJECTE 01</p><h3>Configuració d'equips a mida</h3><p>Selecció de components i configuració d'un ordinador segons els requisits de rendiment, ús i pressupost.</p></div>
             </div>
-
-            <div class="project">
-
-                <h3>Proyecto 3</h3>
-
-                <p>
-                    Proyecto ficticio de reparación y diagnóstico
-                    de equipos informáticos.
-                </p>
-
-                <p>
-                    <strong>Tecnologías:</strong>
-                    Diagnóstico, hardware y reparación.
-                </p>
-
+            <div class="projectes-petits">
+                <article class="projecte-mini"><span>02 / Manteniment</span><h3>Revisió i optimització</h3><p>Neteja, comprovació de components i revisió del funcionament general.</p></article>
+                <article class="projecte-mini"><span>03 / Reparació</span><h3>Diagnòstic d'avaries</h3><p>Identificació d'incidències i proposta de solucions per recuperar el funcionament de l'equip.</p></article>
             </div>
-
         </section>
 
-
-        <!-- EQUIPO -->
-        <section id="equipo">
-
-            <h2>El nostre equip</h2>
-
-            <div class="cards">
-
-                <article class="card">
-                    <h3>Ruben</h3>
-                    <h4>Responsable de montaje</h4>
-                    <p>
-                        Especialista en montaje de equipos,
-                        instalación de componentes y comprobación
-                        de su funcionamiento.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Adrià</h3>
-                    <h4>Responsable de reparación</h4>
-                    <p>
-                        Especialista en diagnóstico, reparación
-                        y sustitución de componentes.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Angel</h3>
-                    <h4>Responsable de mantenimiento</h4>
-                    <p>
-                        Encargado del mantenimiento preventivo,
-                        limpieza y actualización de equipos.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Maria</h3>
-                    <h4>Responsable de gestión</h4>
-                    <p>
-                        Encargada de clientes, proveedores,
-                        stock, pedidos y presupuestos.
-                    </p>
-                </article>
-
+        <section class="seccio fons-alternatiu" id="equip">
+            <div class="titol-seccio centrat">
+                <p class="etiqueta">LES PERSONES DE NEXTBYTE</p>
+                <h2>El nostre <span>equip</span></h2>
+                <p>Un equip amb diferents responsabilitats i un objectiu compartit: oferir un bon servei.</p>
             </div>
-
-        </section>
-
-
-        <!-- TECNOLOGÍAS -->
-        <section id="tecnologias">
-
-            <h2>Tecnologías</h2>
-
-            <div class="technology-list">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Hardware</span>
+            <div class="graella graella-equip">
+                <article class="targeta-persona"><img src="img/adria.jpg" alt="Fotografia d’Adrià Macías" loading="lazy"><div><h3>Adrià Macías</h3><p class="rol">Reparació i disseny web</p><p>S'encarrega de diagnosticar i reparar problemes dels equips i col·labora en el disseny web.</p></div></article>
+                <article class="targeta-persona"><img src="img/angel.jpg" alt="Fotografia d’Àngel Benito" loading="lazy"><div><h3>Angel Benito</h3><p class="rol">Manteniment informàtic</p><p>Realitza tasques de manteniment preventiu i revisió dels equips per millorar-ne el rendiment.</p></div></article>
+                <article class="targeta-persona"><img src="img/ruben.jpg" alt="Fotografia de Rubén Guerrero" loading="lazy"><div><h3>Ruben Guerrero</h3><p class="rol">Muntatge d'ordinadors</p><p>S'encarrega del muntatge, la instal·lació de components i la comprovació dels equips.</p></div></article>
+                <article class="targeta-persona"><img src="img/maria.jpg" alt="Fotografia de Maria Eduarda" loading="lazy"><div><h3>Maria Eduarda</h3><p class="rol">Gestió i administració</p><p>Gestiona l'organització, les comandes, els pressupostos i les tasques administratives.</p></div></article>
             </div>
-
+            <p class="nota-imatges">Les imatges de l'equip són avatars il·lustratius, no fotografies reals dels membres.</p>
         </section>
 
-
-        <!-- CONTACTO -->
-        <section id="contacto">
-
-            <h2>Contacto</h2>
-
-            <form id="contactForm">
-
-                <label for="nombre">Nombre</label>
-                <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    required
-                >
-
-                <label for="email">Correo electrónico</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                >
-
-                <label for="asunto">Asunto</label>
-                <input
-                    type="text"
-                    id="asunto"
-                    name="asunto"
-                    required
-                >
-
-                <label for="mensaje">Mensaje</label>
-                <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    required
-                ></textarea>
-
-                <button type="submit">
-                    Enviar
-                </button>
-
-                <p id="formMessage"></p>
-
-            </form>
-
+        <section class="seccio" id="tecnologies">
+            <div class="titol-seccio">
+                <p class="etiqueta">EINES I CONEIXEMENTS</p>
+                <h2>Tecnologies que <span>utilitzem</span></h2>
+                <p>Recursos per desenvolupar projectes digitals i donar suport als equips informàtics.</p>
+            </div>
+            <div class="llista-tecnologies">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Maquinari</span><span>Diagnòstic</span><span>Manteniment</span>
+            </div>
         </section>
 
+        <section class="seccio seccio-contacte" id="contacte">
+            <div class="contacte-grid">
+                <div>
+                    <p class="etiqueta">PARLEM?</p>
+                    <h2>Contacta amb <span>nosaltres</span></h2>
+                    <p>Tens algun dubte o necessites ajuda informàtica? Explica'ns què necessites.</p>
+                    <div class="dades-contacte">
+                        <p><span>Adreça</span>Carrer Major, Manresa 08242, Barcelona</p>
+                        <p><span>Telèfon</span><a href="tel:+34938974340">938 97 43 40</a></p>
+                        <p><span>Correu electrònic</span><a href="mailto:nextbyte@gmail.com">nextbyte@gmail.com</a></p>
+                    </div>
+                    <p class="nota-imatges">Comproveu les dades de contacte abans de publicar la web.</p>
+                </div>
+                <form id="contactForm">
+                    <label for="nombre">Nom</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriu el teu nom" required>
+                    <label for="email">Correu electrònic</label>
+                    <input type="email" id="email" name="email" placeholder="nom@exemple.cat" required>
+                    <label for="asunto">Assumpte</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motiu del missatge" required>
+                    <label for="mensaje">Missatge</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriu el teu missatge" required></textarea>
+                    <button class="boto boto-principal" type="submit">Enviar missatge</button>
+                    <p id="formMessage" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
     </main>
 
-
-    <footer>
-
-        <h3>NextByte</h3>
-
-        <p>Empresa especializada en soluciones informáticas.</p>
-
-        <p>© 2026 NextByte — Todos los derechos reservados.</p>
-
+    <footer class="peu-pagina">
+        <div class="peu-superior">
+            <a class="marca marca-peu" href="#inici"><img src="img/logo-horitzontal.jpg" alt="NextByte, inici"></a>
+            <p>Empresa especialitzada en solucions informàtiques.</p>
+            <a href="#contacte">Parlem del teu projecte <span>↗</span></a>
+        </div>
+        <div class="peu-inferior"><span>© 2026 NextByte — Tots els drets reservats.</span><a href="#inici">Torna a l'inici ↑</a></div>
     </footer>
-
-
     <script src="js/script.js"></script>
-
 </body>
-
 </html>

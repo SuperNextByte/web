@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120">
+<rect width="520" height="120" fill="none"/>
+<path d="M10 100V20h28l55 60V20h28v80H93L38 40v60Z" fill="#2389ff"/>
+<text x="145" y="87" font-family="Arial,sans-serif" font-size="70" font-weight="700" fill="#f5f8ff">Next</text>
+<text x="300" y="87" font-family="Arial,sans-serif" font-size="70" font-weight="700" fill="#2389ff">Byte</text>
+</svg>
